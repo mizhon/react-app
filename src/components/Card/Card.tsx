@@ -7,7 +7,8 @@ interface Book {
   summary: string; // 简介
   coverage?: string; // 封面
   tags?: string[]; // 标签
-  score: number; // 评分
+  score?: number; // 评分
+  price?: number; // 价格
 };
 
 type Props = {
@@ -15,12 +16,13 @@ type Props = {
 };
 
 export const Card = ({ book }: Props) => {
+  console.log(book);
   return (
     <div className="Card">
+      <img src={ book.coverage } className="coverage-banner" alt="coverage"/>
       <div className="title">{ book.title }</div>
       <div className="author">{ book.author }</div>
       <div className="summary">{ book.summary }</div>
-      <div className="coverage">{ book.coverage }</div>
       <div className="tags">{ book.tags }</div>
       <div className="score">{ book.score }</div>
     </div>
