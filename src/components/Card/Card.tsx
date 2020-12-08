@@ -10,11 +10,11 @@ interface Book {
   score: number; // 评分
 };
 
-type Props = {
+type CardProps = {
   book: Book;
 };
 
-export const Card = ({ book }: Props) => {
+export const Card = ({ book }: CardProps) => {
   return (
     <div className="Card">
       <div className="title">{ book.title }</div>
