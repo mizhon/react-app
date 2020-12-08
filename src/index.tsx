@@ -4,19 +4,19 @@ import './assets/styles/common.scss';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import { Card } from './components/Card/Card';
+import imgURL from "./assets/images/coverages/8239935.jpg";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Card book={"每天演好一个情绪稳定的成年人"} /> */}
     <Card book={
       { 
         id:1, 
         title: "每天演好一个情绪稳定的成年人", 
-        author: "Mister.Z",
+        author: "Jane Deo",
         summary: "一本好书",
-        coverage: "",
-        score: 7.9
+        coverage: imgURL,
+        score: 7
       }
     } />
   </React.StrictMode>,
