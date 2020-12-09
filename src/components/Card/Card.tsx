@@ -2,12 +2,11 @@ import React from 'react';
 import Book from '../../models/Book';
 import "./Card.scss";
 
-type Props = {
+type CardProps = {
   book: Book;
 };
 
-export const Card = ({ book }: Props) => {
-  console.log(book);
+export const Card = ({ book }: CardProps) => {
   return (
     <div className="Card">
       <img src={ book.coverage } className="coverage-banner" alt="coverage"/>
