@@ -4,7 +4,11 @@ import './assets/styles/common.scss';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import { Card } from './components/Card/Card';
+import Book from './models/Book';
 import imgURL from "./assets/images/coverages/8239935.jpg";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const books: Book[] = [];
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,9 +16,9 @@ ReactDOM.render(
     <Card book={
       { 
         id:1, 
-        title: "每天演好一个情绪稳定的成年人", 
-        author: "Jane Deo",
-        summary: "一本好书",
+        title: "山青卷白云：女翻译与王维", 
+        author: "青溪客",
+        summary: "描写盛唐气象不落俗套，带你穿越到一个活灵活现的唐朝。",
         coverage: imgURL,
         score: 7
       }
