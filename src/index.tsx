@@ -8,7 +8,6 @@ import imgURL from "./assets/images/coverages/8239935.jpg";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <Card book={
       { 
         id:1, 
@@ -19,6 +18,7 @@ ReactDOM.render(
         score: 7
       }
     } />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
