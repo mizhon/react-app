@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/styles/common.scss';
@@ -6,13 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import { Card } from './components/Card/Card';
 import Book from './models/Book';
 import imgURL from "./assets/images/coverages/8239935.jpg";
+import { Container } from './components/Container/Container';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const books: Book[] = [];
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card book={
+    {/* <Card book={
       { 
         id:1, 
         title: "山青卷白云：女翻译与王维", 
@@ -21,8 +23,9 @@ ReactDOM.render(
         coverage: imgURL,
         score: 7
       }
-    } />
+    } /> */}
     <App />
+    <Container page={1} handlePagination={(page) => { console.log('pagintaion', page )}}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
