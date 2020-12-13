@@ -19,14 +19,16 @@ export const Container: React.FC<IContainerProps> = (page, handlePagination) => 
           <button 
             onClick={() => handlePagination(page)}
           >
-            1
+            &lt;
           </button>
         </div>
         <div className={styles.Content}>
-          nimabi
+          testing...
         </div>
         <div className={styles.Button}>
-          <button>2</button>
+          <button>
+            &gt;
+          </button>
         </div>    
       </div>
     </div>
